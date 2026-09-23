@@ -1,0 +1,226 @@
+{
+  "hero": {
+    "name": "Felix Thomas Roy",
+    "tagline": "Building Practical Software. Learning Intelligent Systems.",
+    "subtitle": "Computer Science Graduate · Junior Application Developer · AI/ML Enthusiast",
+    "intro": "I'm Felix Thomas Roy, a Computer Science graduate and Junior Application Developer with experience working on real-world mobile application development. I enjoy building practical software, solving technical problems, and continuously expanding my skills in Artificial Intelligence and Machine Learning.",
+    "profilePhoto": "assets/profile-photo.jpeg",
+    "resumeFile": "assets/Felix_resume.pdf",
+    "availableText": "Available for work",
+    "cta": {
+      "viewProjects": "#projects",
+      "contact": "#contact",
+      "github": "https://github.com/felixthomasroy",
+      "linkedin": "https://www.linkedin.com/in/felix-thomas-roy-474329355"
+    }
+  },
+  "about": {
+    "heading": "About Me",
+    "paragraphs": [
+      "I am a Computer Science graduate with a strong interest in software development, mobile application development, and Artificial Intelligence.",
+      "I currently work as a Junior Application Developer at Navydo, a ride-hailing company, where I contribute to application feature development, testing, debugging, and collaborative software development.",
+      "My development experience includes working with Flutter and Dart for mobile applications, JavaScript and PostgreSQL for application-related development, and Git-based workflows for team collaboration.",
+      "Alongside my professional development experience, I am pursuing structured training in Artificial Intelligence and Machine Learning. I have worked through Python, Object-Oriented Programming, data preprocessing, and several fundamental machine learning algorithms including Linear Regression, Logistic Regression, K-Nearest Neighbors, Decision Trees, Support Vector Machines, AdaBoost, and Gradient Boosting.",
+      "I am particularly interested in combining software engineering with AI/ML to build useful, practical applications."
+    ],
+    "quickProfile": [
+      { "label": "Education", "value": "B.Tech in Computer Science" },
+      { "label": "Current Role", "value": "Junior Application Developer" },
+      { "label": "Focus", "value": "Software Development + AI/ML" },
+      { "label": "Primary Dev", "value": "Flutter / Dart" },
+      { "label": "Database", "value": "PostgreSQL" },
+      { "label": "Learning", "value": "Machine Learning & AI" }
+    ]
+  },
+  "experience": [
+    {
+      "id": "navydo",
+      "role": "Junior Application Developer",
+      "company": "Navydo",
+      "type": "Full-time · Remote",
+      "period": "2026 – Present",
+      "description": "Working as a Junior Application Developer on a ride-hailing application, contributing to application feature development, testing, debugging, and collaborative software development.",
+      "responsibilities": [
+        "Contribute to the development and improvement of mobile application features",
+        "Work with Flutter and Dart in the development of application interfaces and workflows",
+        "Test application functionality and identify issues during development",
+        "Debug application issues and investigate unexpected application behavior",
+        "Work with JavaScript and PostgreSQL as part of application development",
+        "Use Git for version control and collaborative development",
+        "Work with Android Studio and VS Code as primary development environments",
+        "Collaborate with developers through branch-based Git workflows and pull requests",
+        "Work on real-world application workflows involving passengers, drivers, trips, bookings, payments, and related features",
+        "Gain experience working within an existing production-oriented codebase"
+      ],
+      "technologies": ["Flutter", "Dart", "JavaScript", "PostgreSQL", "Git", "Android Studio", "VS Code", "Node.js", "Prisma", "REST APIs"]
+    },
+    {
+      "id": "aiml",
+      "role": "AI/ML Trainee",
+      "company": "Link Academy India",
+      "type": "Internship · Structured Learning",
+      "period": "2026",
+      "description": "Undertaking a structured AI/ML program with an internship component covering Python, machine learning fundamentals, supervised learning, classification, regression, and ensemble learning.",
+      "responsibilities": [
+        "Python programming and Object-Oriented Programming",
+        "Data preprocessing and Exploratory Data Analysis",
+        "Supervised learning: classification and regression",
+        "Machine learning algorithms: Linear Regression, Logistic Regression, KNN, Decision Trees, SVM, AdaBoost, Gradient Boosting",
+        "Model training, testing, and evaluation",
+        "Feature scaling and selection",
+        "Building user-facing ML apps with Streamlit"
+      ],
+      "technologies": ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Streamlit", "Joblib"]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Programming",
+      "items": ["Python", "Dart", "JavaScript", "SQL"]
+    },
+    {
+      "category": "Mobile Development",
+      "items": ["Flutter", "Android Development", "Flutter UI Development"]
+    },
+    {
+      "category": "AI / Machine Learning",
+      "items": ["Scikit-learn", "Machine Learning", "Supervised Learning", "Classification", "Regression", "Feature Scaling", "Model Evaluation", "Streamlit"]
+    },
+    {
+      "category": "Backend / Database",
+      "items": ["Node.js", "Express", "PostgreSQL", "Prisma", "REST APIs"]
+    },
+    {
+      "category": "Developer Tools",
+      "items": ["Git", "GitHub", "VS Code", "Android Studio", "Postman", "npm"]
+    },
+    {
+      "category": "Other Technologies",
+      "items": ["Firebase", "Odoo CRM", "Ngrok", "IoT", "ESP32"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "food-redistribution",
+      "featured": true,
+      "title": "IoT-Based Smart Food Surplus Redistribution System",
+      "type": "Final Year Project",
+      "description": "A final-year project designed to support the redistribution of surplus food using IoT technology and a Flutter-based donor application. The system combines mobile application development, IoT sensors, Firebase, location services, and hardware components to collect and manage food-related information.",
+      "details": "The system allows food donors to provide information about surplus food while IoT hardware captures relevant measurements such as weight and temperature. Location services associate food donations with geographical information, supporting the broader goal of connecting surplus food with redistribution opportunities.",
+      "technologies": ["Flutter", "Firebase", "ESP32", "HX711", "Load Cell", "DS18B20", "Geolocator"],
+      "image": "",
+      "githubUrl": "",
+      "liveUrl": ""
+    },
+    {
+      "id": "food-waste-detection",
+      "featured": false,
+      "title": "Food Waste Detection",
+      "type": "ML Project",
+      "description": "A machine learning project focused on identifying patterns related to food waste using a real-world dataset. The project explores data preprocessing, feature analysis, model training, evaluation, and prediction.",
+      "details": "",
+      "technologies": ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Streamlit"],
+      "image": "",
+      "githubUrl": "",
+      "liveUrl": ""
+    },
+    {
+      "id": "svm-classifier",
+      "featured": false,
+      "title": "SVM Classification Web App",
+      "type": "ML Project",
+      "description": "A beginner-to-intermediate machine learning classification project using Support Vector Machines. Demonstrates how numerical features can be scaled and passed into an SVM classifier to make predictions through a simple Streamlit interface.",
+      "details": "",
+      "technologies": ["Python", "Scikit-learn", "Pandas", "Streamlit"],
+      "image": "",
+      "githubUrl": "",
+      "liveUrl": ""
+    },
+    {
+      "id": "titanic-prediction",
+      "featured": false,
+      "title": "Titanic Survival Prediction",
+      "type": "ML Project",
+      "description": "A machine learning classification project based on the Titanic dataset. The application processes passenger information and predicts survival using a trained machine learning model with a Streamlit interface.",
+      "details": "",
+      "technologies": ["Python", "Pandas", "Scikit-learn", "Joblib", "Streamlit"],
+      "image": "",
+      "githubUrl": "",
+      "liveUrl": ""
+    }
+  ],
+  "timeline": [
+    {
+      "step": "Computer Science Education",
+      "description": "Built foundational knowledge in programming, databases, software engineering, and computer science at TKM Institute of Technology.",
+      "period": "2022 – 2026"
+    },
+    {
+      "step": "Flutter & Mobile Development",
+      "description": "Started working with Flutter and Dart, building mobile application interfaces and workflows.",
+      "period": "2024"
+    },
+    {
+      "step": "Junior Application Developer — Navydo",
+      "description": "Joined Navydo and gained real-world experience working on a ride-hailing application with Flutter, Dart, JavaScript, and PostgreSQL.",
+      "period": "2026"
+    },
+    {
+      "step": "AI/ML Structured Training",
+      "description": "Started structured learning in Python, machine learning fundamentals, supervised learning, and ensemble methods at Link Academy India.",
+      "period": "2026"
+    },
+    {
+      "step": "Practical ML Projects",
+      "description": "Built classification and prediction applications using Python, Scikit-learn, and Streamlit to apply machine learning concepts.",
+      "period": "2026"
+    },
+    {
+      "step": "Future Direction",
+      "description": "Combining software development and AI/ML to build practical intelligent applications.",
+      "period": "Next →"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology",
+      "field": "Computer Science and Engineering",
+      "institution": "TKM Institute of Technology",
+      "period": "2022 – 2026",
+      "focusAreas": ["Programming", "Software Development", "Database Systems", "Computer Science Fundamentals", "Application Development", "IoT", "Software Engineering"]
+    },
+    {
+      "degree": "AI/ML Training Program",
+      "field": "Artificial Intelligence & Machine Learning",
+      "institution": "Link Academy India",
+      "period": "2026",
+      "focusAreas": ["Python", "Machine Learning", "Data Preprocessing", "Supervised Learning", "Model Evaluation", "Streamlit"]
+    }
+  ],
+  "interests": [
+    { "title": "Mobile Applications", "description": "I enjoy building practical mobile applications with Flutter and exploring how different application components work together." },
+    { "title": "Machine Learning", "description": "I am interested in understanding how machine learning models learn patterns from data and how those models can be integrated into useful applications." },
+    { "title": "Problem Solving", "description": "I enjoy debugging issues, understanding why systems behave unexpectedly, and finding practical solutions." },
+    { "title": "IoT", "description": "My academic project introduced me to the combination of hardware, sensors, mobile applications, and cloud services." },
+    { "title": "Continuous Learning", "description": "I am continuously expanding my knowledge through real-world development, structured AI/ML learning, and personal projects." }
+  ],
+  "contact": {
+    "heading": "Let's Connect",
+    "subtext": "I'm open to connecting with developers, companies, recruiters, and people working on interesting software and AI/ML projects.",
+    "email": "felixthomasroy123@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/felix-thomas-roy-474329355",
+    "github": "https://github.com/felixthomasroy",
+    "instagram": "https://www.instagram.com/felixthomasroy_",
+    "location": "Kerala, India"
+  },
+  "footer": {
+    "name": "Felix Thomas Roy",
+    "tagline": "Computer Science Graduate · Junior Application Developer · AI/ML Learner",
+    "copyright": "© 2026 Felix Thomas Roy. All rights reserved."
+  },
+  "meta": {
+    "title": "Felix Thomas Roy | Junior Application Developer & AI/ML Learner",
+    "description": "Portfolio of Felix Thomas Roy, a Computer Science graduate and Junior Application Developer with experience in Flutter application development and an expanding focus on Artificial Intelligence and Machine Learning.",
+    "keywords": "Felix Thomas Roy, Flutter Developer, Junior Developer, AI ML, Kerala, Portfolio"
+  }
+}

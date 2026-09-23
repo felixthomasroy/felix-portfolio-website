@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felix Thomas Roy — Control Panel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="admin.css" />
+  <meta name="robots" content="noindex, nofollow" />
+</head>
+<body>
+
+  <!-- ── LOGIN SCREEN ──────────────────────────────────────── -->
+  <div id="loginScreen" class="login-screen">
+    <div class="login-box">
+      <div class="login-logo">
+        <span class="pulse-dot"></span>
+        <span class="login-title">Portfolio Manager</span>
+      </div>
+      <p class="login-sub">Sign in with your personal credentials to manage portfolio content</p>
+      <form id="loginForm" onsubmit="handleLogin(event)" autocomplete="off">
+        <div class="field-group" style="margin-bottom: 1rem;">
+          <label for="loginUser">Username</label>
+          <input type="text" id="loginUser" placeholder="Enter username" autocomplete="off" required />
+        </div>
+        <div class="field-group" style="margin-bottom: .8rem;">
+          <label for="loginPass">Password</label>
+          <input type="password" id="loginPass" placeholder="••••••••" autocomplete="off" required />
+        </div>
+        <p id="loginError" class="login-error"></p>
+        <button type="submit" class="btn-primary wide">Access Control Panel</button>
+      </form>
+      <a href="index.html" class="back-link">← Return to live portfolio</a>
+    </div>
+  </div>
+
+  <!-- ── ADMIN PANEL ────────────────────────────────────────── -->
+  <div id="adminPanel" class="admin-panel hidden">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <span class="pulse-dot"></span> Admin Portal
+      </div>
+      <nav class="sidebar-nav">
+        <button class="tab-btn active" data-tab="hero">⚡ Hero & Intro</button>
+        <button class="tab-btn" data-tab="about">👤 About & Profile</button>
+        <button class="tab-btn" data-tab="experience">💼 Work Experience</button>
+        <button class="tab-btn" data-tab="skills">🛠 Technical Skills</button>
+        <button class="tab-btn" data-tab="projects">📁 Projects</button>
+        <button class="tab-btn" data-tab="timeline">📅 Learning Journey</button>
+        <button class="tab-btn" data-tab="education">🎓 Education</button>
+        <button class="tab-btn" data-tab="contact">📬 Contact & Links</button>
+        <button class="tab-btn" data-tab="images">🖼 Images & Assets</button>
+      </nav>
+      <div class="sidebar-actions">
+        <button class="btn-cyan wide" id="saveBtn" onclick="saveData()">💾 Save All Changes</button>
+        <button class="btn-ghost wide" onclick="logout()">Sign Out</button>
+        <a href="index.html" target="_blank" class="btn-ghost wide">↗ Open Live Site</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="admin-main">
+      <div class="save-bar" id="saveBar">
+        <span id="saveMsg">Ready. Edit any details and click Save.</span>
+        <button class="btn-cyan" onclick="saveData()">Save All Changes</button>
+      </div>
+
+      <!-- ── HERO TAB ─────────────────────────────── -->
+      <div class="tab-content active" id="tab-hero">
+        <h2 class="tab-title">Hero & Introduction</h2>
+        <div class="field-grid">
+          <div class="field-group full">
+            <label>Full Name</label>
+            <input type="text" id="h-name" placeholder="Felix Thomas Roy" />
+          </div>
+          <div class="field-group full">
+            <label>Main Tagline</label>
+            <input type="text" id="h-tagline" placeholder="Building Practical Software. Learning Intelligent Systems." />
+          </div>
+          <div class="field-group full">
+            <label>Subtitle / Professional Identity</label>
+            <input type="text" id="h-subtitle" placeholder="Computer Science Graduate · Junior Application Developer · AI/ML Enthusiast" />
+          </div>
+          <div class="field-group full">
+            <label>Intro Paragraph</label>
+            <textarea id="h-intro" rows="4"></textarea>
+          </div>
+          <div class="field-group">
+            <label>GitHub URL</label>
+            <input type="url" id="h-github" placeholder="https://github.com/..." />
+          </div>
+          <div class="field-group">
+            <label>LinkedIn URL</label>
+            <input type="url" id="h-linkedin" placeholder="https://linkedin.com/in/..." />
+          </div>
+          <div class="field-group">
+            <label>Resume File Path</label>
+            <input type="text" id="h-resume" placeholder="assets/Felix_resume.pdf" />
+          </div>
+          <div class="field-group">
+            <label>Status Badge Text</label>
+            <input type="text" id="h-available" placeholder="Available for work" />
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ABOUT TAB ─────────────────────────────── -->
+      <div class="tab-content hidden" id="tab-about">
+        <h2 class="tab-title">About Me Narrative</h2>
+        <div id="aboutParagraphs" class="repeat-list"></div>
+        <button class="btn-add" onclick="addAboutParagraph()">+ Add Paragraph</button>
+
+        <h3 class="section-mini-title">Quick Profile Details</h3>
+        <div id="quickProfileItems" class="repeat-list"></div>
+        <button class="btn-add" onclick="addQuickProfileItem()">+ Add Profile Item</button>
+      </div>
+
+      <!-- ── EXPERIENCE TAB ───────────────────────── -->
+      <div class="tab-content hidden" id="tab-experience">
+        <h2 class="tab-title">Work & Learning Experience</h2>
+        <div id="experienceItems" class="repeat-list"></div>
+        <button class="btn-add" onclick="addExperience()">+ Add Experience Entry</button>
+      </div>
+
+      <!-- ── SKILLS TAB ────────────────────────────── -->
+      <div class="tab-content hidden" id="tab-skills">
+        <h2 class="tab-title">Technical Skills Categories</h2>
+        <div id="skillCategories" class="repeat-list"></div>
+        <button class="btn-add" onclick="addSkillCategory()">+ Add Skill Category</button>
+      </div>
+
+      <!-- ── PROJECTS TAB ──────────────────────────── -->
+      <div class="tab-content hidden" id="tab-projects">
+        <h2 class="tab-title">Featured & Machine Learning Projects</h2>
+        <div id="projectItems" class="repeat-list"></div>
+        <button class="btn-add" onclick="addProject()">+ Add Project</button>
+      </div>
+
+      <!-- ── TIMELINE TAB ──────────────────────────── -->
+      <div class="tab-content hidden" id="tab-timeline">
+        <h2 class="tab-title">Learning Journey Timeline</h2>
+        <div id="timelineItems" class="repeat-list"></div>
+        <button class="btn-add" onclick="addTimelineItem()">+ Add Journey Step</button>
+      </div>
+
+      <!-- ── EDUCATION TAB ─────────────────────────── -->
+      <div class="tab-content hidden" id="tab-education">
+        <h2 class="tab-title">Education & Training</h2>
+        <div id="educationItems" class="repeat-list"></div>
+        <button class="btn-add" onclick="addEducation()">+ Add Education Item</button>
+      </div>
+
+      <!-- ── CONTACT TAB ───────────────────────────── -->
+      <div class="tab-content hidden" id="tab-contact">
+        <h2 class="tab-title">Contact Information & Links</h2>
+        <div class="field-grid">
+          <div class="field-group full">
+            <label>Heading</label>
+            <input type="text" id="c-heading" placeholder="Let's Connect" />
+          </div>
+          <div class="field-group full">
+            <label>Introductory Sub-text</label>
+            <textarea id="c-subtext" rows="2"></textarea>
+          </div>
+          <div class="field-group">
+            <label>Contact Email</label>
+            <input type="email" id="c-email" />
+          </div>
+          <div class="field-group">
+            <label>Location</label>
+            <input type="text" id="c-location" />
+          </div>
+          <div class="field-group">
+            <label>LinkedIn URL</label>
+            <input type="url" id="c-linkedin" />
+          </div>
+          <div class="field-group">
+            <label>GitHub URL</label>
+            <input type="url" id="c-github" />
+          </div>
+          <div class="field-group">
+            <label>Instagram URL</label>
+            <input type="url" id="c-instagram" />
+          </div>
+        </div>
+
+        <h3 class="section-mini-title">Footer Details</h3>
+        <div class="field-grid">
+          <div class="field-group">
+            <label>Footer Name</label>
+            <input type="text" id="f-name" />
+          </div>
+          <div class="field-group">
+            <label>Footer Tagline</label>
+            <input type="text" id="f-tagline" />
+          </div>
+          <div class="field-group full">
+            <label>Copyright Notice</label>
+            <input type="text" id="f-copy" />
+          </div>
+        </div>
+      </div>
+
+      <!-- ── IMAGES TAB ─────────────────────────────── -->
+      <div class="tab-content hidden" id="tab-images">
+        <h2 class="tab-title">Media & Documents</h2>
+
+        <div class="img-upload-card">
+          <h3>Profile Photo</h3>
+          <div class="img-preview-wrap">
+            <img id="previewProfile" src="assets/profile-photo.jpeg" alt="Profile photo preview" class="img-preview" />
+          </div>
+          <label class="file-label">
+            Upload New Photo
+            <input type="file" id="uploadProfile" accept="image/*" onchange="uploadFile(this,'profile-photo.jpeg','previewProfile','h-profilePhoto')" />
+          </label>
+          <p class="img-note">Supported: JPG, PNG. Replaces assets/profile-photo.jpeg immediately.</p>
+        </div>
+
+        <div class="img-upload-card">
+          <h3>Resume / CV Document</h3>
+          <div class="file-current" id="currentResume">Current: assets/Felix_resume.pdf</div>
+          <label class="file-label">
+            Upload New Resume PDF
+            <input type="file" id="uploadResume" accept=".pdf" onchange="uploadFile(this,'Felix_resume.pdf',null,'h-resume')" />
+          </label>
+          <p class="img-note">PDF file. Automatically updates the Download Resume button on your portfolio.</p>
+        </div>
+
+        <div class="img-upload-card">
+          <h3>Featured Project Showcase Image</h3>
+          <div class="img-preview-wrap" id="featImgWrap">
+            <span class="img-placeholder">No image selected</span>
+          </div>
+          <label class="file-label">
+            Upload Project Image
+            <input type="file" id="uploadFeatured" accept="image/*" onchange="uploadProjectImage(this)" />
+          </label>
+          <p class="img-note">Displays in the IoT / Featured Project card.</p>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

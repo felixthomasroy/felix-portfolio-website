@@ -1,0 +1,10 @@
+# Personal photos
+assets/profile-photo.jpeg
+assets/Screenshot 2026-08-08 151716.png
+assets/uploads/
+
+# Editor settings
+.vscode/
+
+# Dependencies
+node_modules/

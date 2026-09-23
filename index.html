@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felix Thomas Roy | Junior Application Developer &amp; AI/ML Learner</title>
+  <meta name="description" content="Portfolio of Felix Thomas Roy, a Computer Science graduate and Junior Application Developer with experience in Flutter application development and an expanding focus on Artificial Intelligence and Machine Learning." />
+  <meta name="keywords" content="Felix Thomas Roy, Flutter Developer, Junior Developer, AI ML, Kerala, Portfolio" />
+  <meta property="og:title" content="Felix Thomas Roy | Junior Application Developer &amp; AI/ML Learner" />
+  <meta property="og:description" content="Computer Science graduate and Junior Application Developer specialising in Flutter and AI/ML." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Inline portfolio data — always works, even without the server -->
+  <script>
+  window.PORTFOLIO_DATA = {
+    "hero": {
+      "name": "Felix Thomas Roy",
+      "tagline": "Building Practical Software. Learning Intelligent Systems.",
+      "subtitle": "Computer Science Graduate \u00b7 Junior Application Developer \u00b7 AI/ML Enthusiast",
+      "intro": "I'm Felix Thomas Roy, a Computer Science graduate and Junior Application Developer with experience working on real-world mobile application development. I enjoy building practical software, solving technical problems, and continuously expanding my skills in Artificial Intelligence and Machine Learning.",
+      "profilePhoto": "assets/profile-photo.jpeg",
+      "resumeFile": "assets/Felix_resume.pdf",
+      "availableText": "Available for work",
+      "cta": {
+        "viewProjects": "#projects",
+        "contact": "#contact",
+        "github": "https://github.com/felixthomasroy",
+        "linkedin": "https://www.linkedin.com/in/felix-thomas-roy-474329355"
+      }
+    },
+    "about": {
+      "heading": "About Me",
+      "paragraphs": [
+        "I am a Computer Science graduate with a strong interest in software development, mobile application development, and Artificial Intelligence.",
+        "I currently work as a Junior Application Developer at Navydo, a ride-hailing company, where I contribute to application feature development, testing, debugging, and collaborative software development.",
+        "My development experience includes working with Flutter and Dart for mobile applications, JavaScript and PostgreSQL for application-related development, and Git-based workflows for team collaboration.",
+        "Alongside my professional development experience, I am pursuing structured training in Artificial Intelligence and Machine Learning. I have worked through Python, Object-Oriented Programming, data preprocessing, and several fundamental machine learning algorithms including Linear Regression, Logistic Regression, K-Nearest Neighbors, Decision Trees, Support Vector Machines, AdaBoost, and Gradient Boosting.",
+        "I am particularly interested in combining software engineering with AI/ML to build useful, practical applications."
+      ],
+      "quickProfile": [
+        { "label": "Education", "value": "B.Tech in Computer Science" },
+        { "label": "Current Role", "value": "Junior Application Developer" },
+        { "label": "Focus", "value": "Software Development + AI/ML" },
+        { "label": "Primary Dev", "value": "Flutter / Dart" },
+        { "label": "Database", "value": "PostgreSQL" },
+        { "label": "Learning", "value": "Machine Learning & AI" }
+      ]
+    },
+    "experience": [
+      {
+        "id": "navydo",
+        "role": "Junior Application Developer",
+        "company": "Navydo",
+        "type": "Full-time \u00b7 Remote",
+        "period": "2026 \u2013 Present",
+        "description": "Working as a Junior Application Developer on a ride-hailing application, contributing to application feature development, testing, debugging, and collaborative software development.",
+        "responsibilities": [
+          "Contribute to the development and improvement of mobile application features",
+          "Work with Flutter and Dart in the development of application interfaces and workflows",
+          "Test application functionality and identify issues during development",
+          "Debug application issues and investigate unexpected application behavior",
+          "Work with JavaScript and PostgreSQL as part of application development",
+          "Use Git for version control and collaborative development",
+          "Collaborate through branch-based Git workflows and pull requests",
+          "Work on real-world workflows involving passengers, drivers, trips, bookings, payments, and related features",
+          "Gain experience working within an existing production-oriented codebase"
+        ],
+        "technologies": ["Flutter", "Dart", "JavaScript", "PostgreSQL", "Git", "Android Studio", "VS Code", "Node.js", "Prisma", "REST APIs"]
+      },
+      {
+        "id": "aiml",
+        "role": "AI/ML Trainee",
+        "company": "Link Academy India",
+        "type": "Internship \u00b7 Structured Learning",
+        "period": "2026",
+        "description": "Undertaking a structured AI/ML program with an internship component covering Python, machine learning fundamentals, supervised learning, classification, regression, and ensemble learning.",
+        "responsibilities": [
+          "Python programming and Object-Oriented Programming",
+          "Data preprocessing and Exploratory Data Analysis",
+          "Supervised learning: classification and regression algorithms",
+          "Machine learning algorithms: Linear Regression, Logistic Regression, KNN, Decision Trees, SVM, AdaBoost, Gradient Boosting",
+          "Model training, testing, and evaluation",
+          "Feature scaling and feature selection",
+          "Building user-facing ML applications with Streamlit"
+        ],
+        "technologies": ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Streamlit", "Joblib"]
+      }
+    ],
+    "skills": [
+      { "category": "Programming", "items": ["Python", "Dart", "JavaScript", "SQL"] },
+      { "category": "Mobile Development", "items": ["Flutter", "Android Development", "Flutter UI Development"] },
+      { "category": "AI / Machine Learning", "items": ["Scikit-learn", "Machine Learning", "Supervised Learning", "Classification", "Regression", "Feature Scaling", "Model Evaluation", "Streamlit"] },
+      { "category": "Backend / Database", "items": ["Node.js", "Express", "PostgreSQL", "Prisma", "REST APIs"] },
+      { "category": "Developer Tools", "items": ["Git", "GitHub", "VS Code", "Android Studio", "Postman", "npm"] },
+      { "category": "Other Technologies", "items": ["Firebase", "Odoo CRM", "Ngrok", "IoT", "ESP32"] }
+    ],
+    "projects": [
+      {
+        "id": "food-redistribution",
+        "featured": true,
+        "title": "IoT-Based Smart Food Surplus Redistribution System",
+        "type": "Final Year Project",
+        "description": "A final-year project designed to support the redistribution of surplus food using IoT technology and a Flutter-based donor application. The system combines mobile development, IoT sensors, Firebase, and location services.",
+        "details": "The system allows food donors to provide information about surplus food while IoT hardware captures measurements such as weight and temperature. Location services associate food donations with geographical information, supporting connections between surplus food and redistribution opportunities.",
+        "technologies": ["Flutter", "Firebase", "ESP32", "HX711", "Load Cell", "DS18B20", "Geolocator"],
+        "image": "",
+        "githubUrl": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "food-waste-detection",
+        "featured": false,
+        "title": "Food Waste Detection",
+        "type": "ML Project",
+        "description": "A machine learning project focused on identifying patterns related to food waste using a real-world dataset. Explores data preprocessing, feature analysis, model training, evaluation, and prediction.",
+        "details": "",
+        "technologies": ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Streamlit"],
+        "image": "",
+        "githubUrl": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "svm-classifier",
+        "featured": false,
+        "title": "SVM Classification Web App",
+        "type": "ML Project",
+        "description": "A machine learning classification project using Support Vector Machines. Demonstrates feature scaling, SVM classification, and model prediction through a simple Streamlit interface.",
+        "details": "",
+        "technologies": ["Python", "Scikit-learn", "Pandas", "Streamlit"],
+        "image": "",
+        "githubUrl": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "titanic-prediction",
+        "featured": false,
+        "title": "Titanic Survival Prediction",
+        "type": "ML Project",
+        "description": "A machine learning classification project based on the Titanic dataset. Processes passenger information and predicts survival using a trained ML model with an interactive Streamlit UI.",
+        "details": "",
+        "technologies": ["Python", "Pandas", "Scikit-learn", "Joblib", "Streamlit"],
+        "image": "",
+        "githubUrl": "",
+        "liveUrl": ""
+      }
+    ],
+    "timeline": [
+      { "step": "Computer Science Education", "description": "Built foundational knowledge in programming, databases, software engineering, and computer science at TKM Institute of Technology.", "period": "2022 – 2026" },
+      { "step": "Flutter & Mobile Development", "description": "Started working with Flutter and Dart, building mobile application interfaces and workflows.", "period": "2024" },
+      { "step": "Junior Application Developer — Navydo", "description": "Joined Navydo and gained real-world experience working on a ride-hailing application with Flutter, Dart, JavaScript, and PostgreSQL.", "period": "2026" },
+      { "step": "AI/ML Structured Training", "description": "Started structured learning in Python, machine learning fundamentals, supervised learning, and ensemble methods at Link Academy India.", "period": "2026" },
+      { "step": "Practical ML Projects", "description": "Built classification and prediction applications using Python, Scikit-learn, and Streamlit to apply machine learning concepts.", "period": "2026" },
+      { "step": "Future Direction", "description": "Combining software development and AI/ML to build practical intelligent applications.", "period": "Next \u2192" }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Technology",
+        "field": "Computer Science and Engineering",
+        "institution": "TKM Institute of Technology",
+        "period": "2022 – 2026",
+        "focusAreas": ["Programming", "Software Development", "Database Systems", "Computer Science Fundamentals", "Application Development", "IoT", "Software Engineering"]
+      },
+      {
+        "degree": "AI/ML Training Program",
+        "field": "Artificial Intelligence & Machine Learning",
+        "institution": "Link Academy India",
+        "period": "2026",
+        "focusAreas": ["Python", "Machine Learning", "Data Preprocessing", "Supervised Learning", "Model Evaluation", "Streamlit"]
+      }
+    ],
+    "contact": {
+      "heading": "Let\u2019s Connect",
+      "subtext": "I\u2019m open to connecting with developers, companies, recruiters, and people working on interesting software and AI/ML projects.",
+      "email": "felixthomasroy123@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/felix-thomas-roy-474329355",
+      "github": "https://github.com/felixthomasroy",
+      "instagram": "https://www.instagram.com/felixthomasroy_",
+      "location": "Kerala, India"
+    },
+    "footer": {
+      "name": "Felix Thomas Roy",
+      "tagline": "Computer Science Graduate \u00b7 Junior Application Developer \u00b7 AI/ML Learner",
+      "copyright": "\u00a9 2026 Felix Thomas Roy. All rights reserved."
+    }
+  };
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="page-header" id="pageHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Felix Thomas Roy</a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"></button>
+      <nav id="mainNav" class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#timeline">Journey</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-layout">
+
+          <!-- Photo — LEFT -->
+          <aside class="photo-panel">
+            <div class="photo-frame">
+              <img class="profile-image" id="profilePhoto" src="assets/profile-photo.jpeg" alt="Felix Thomas Roy" />
+            </div>
+          </aside>
+
+          <!-- Text — RIGHT -->
+          <div class="hero-text reveal">
+            <div class="portfolio-tag">
+              <span class="pulse-dot"></span>
+              Portfolio Profile
+            </div>
+            <h1 class="hero-name" id="heroName">Felix Thomas Roy</h1>
+            <p class="hero-tagline" id="heroTagline">Building Practical Software. Learning Intelligent Systems.</p>
+            <p class="hero-subtitle" id="heroSubtitle">Computer Science Graduate &middot; Junior Application Developer &middot; AI/ML Enthusiast</p>
+
+            <div class="info-stack">
+              <div class="info-row">
+                <span class="info-label">Education</span>
+                <span class="info-value">B.Tech CS Graduate &middot; TKM Institute of Technology</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Current Role</span>
+                <span class="info-value">Junior Application Developer &middot; Navydo</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Location</span>
+                <span class="info-value">Kerala, India</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Focus</span>
+                <span class="info-value accent-text">Flutter &bull; Python &bull; AI/ML &bull; Git &bull; PostgreSQL</span>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button secondary" id="resumeBtn" href="assets/Felix_resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+              <a class="button secondary" href="#contact">Contact Me</a>
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com/felixthomasroy" target="_blank" rel="noreferrer" class="social-pill" id="heroGithub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/felix-thomas-roy-474329355" target="_blank" rel="noreferrer" class="social-pill" id="heroLinkedin">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>About Me</span>
+          <h2>Computer Science graduate building real-world software and AI/ML skills.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal" id="aboutText"></div>
+          <div class="quick-profile reveal" id="quickProfile">
+            <h3 class="qp-heading">Quick Profile</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>Experience</span>
+          <h2>Work and learning experiences that shaped my growth.</h2>
+        </div>
+        <div id="experienceList" class="experience-list"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>Skills</span>
+          <h2>Core skills I use to build useful software.</h2>
+        </div>
+        <div id="skillsGrid" class="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>Projects</span>
+          <h2>Selected work with real-world value.</h2>
+        </div>
+        <div id="featuredProject" class="featured-project-wrapper reveal"></div>
+
+        <div class="section-heading reveal" style="margin-top:3.5rem">
+          <span>Machine Learning Projects</span>
+          <h2>Practical ML projects demonstrating my learning journey.</h2>
+        </div>
+        <div id="mlProjects" class="ml-grid"></div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>Learning Journey</span>
+          <h2>From Computer Science foundations to AI/ML-enabled development.</h2>
+        </div>
+        <div id="timelineList" class="timeline-list"></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>Education</span>
+          <h2>Computer Science foundation with practical learning.</h2>
+        </div>
+        <div id="educationList" class="edu-grid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>Contact</span>
+          <h2>Let&rsquo;s connect and build something useful.</h2>
+        </div>
+        <p class="contact-intro reveal" id="contactIntro">I&rsquo;m open to connecting with developers, companies, recruiters, and people working on interesting software and AI/ML projects.</p>
+
+        <!-- Contact details row -->
+        <div id="contactInfo" class="contact-details-row reveal"></div>
+
+        <!-- Contact form — full width below -->
+        <form class="contact-form reveal" id="contactForm" onsubmit="handleContactForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="formName">Name</label>
+              <input type="text" id="formName" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="formEmail">Email</label>
+              <input type="email" id="formEmail" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="formMsg">Message</label>
+            <textarea id="formMsg" rows="5" placeholder="What would you like to say?" required></textarea>
+          </div>
+          <button type="submit" class="button primary">Send Message</button>
+          <p id="formStatus" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-name" id="footerName">Felix Thomas Roy</p>
+      <p class="footer-tagline" id="footerTagline">Computer Science Graduate &middot; Junior Application Developer &middot; AI/ML Learner</p>
+      <div class="footer-social-row">
+        <a href="https://github.com/felixthomasroy" target="_blank" rel="noreferrer" id="footerGithub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/felix-thomas-roy-474329355" target="_blank" rel="noreferrer" id="footerLinkedin">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:felixthomasroy123@gmail.com" id="footerEmail">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Email
+        </a>
+        <a href="https://www.instagram.com/felixthomasroy_" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Instagram
+        </a>
+      </div>
+      <p class="footer-copy" id="footerCopy">&copy; 2026 Felix Thomas Roy. All rights reserved.</p>
+      <!-- Admin panel access — subtle but findable in the footer -->
+      <a href="ctrl-panel.html" class="admin-link" title="Admin">&#9881; Admin</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
