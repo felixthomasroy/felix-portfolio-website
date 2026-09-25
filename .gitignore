@@ -2,6 +2,12 @@
 assets/profile-photo.jpeg
 assets/Screenshot 2026-08-08 151716.png
 assets/uploads/
+assets/Felix_resume.pdf
+
+# Local-only administration files contain credentials and filesystem endpoints
+admin.js
+ctrl-panel.html
+server.js
 
 # Editor settings
 .vscode/
