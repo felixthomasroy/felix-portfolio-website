@@ -1,8 +1,5 @@
-# Personal photos
-assets/profile-photo.jpeg
-assets/Screenshot 2026-08-08 151716.png
+# Local-only uploads
 assets/uploads/
-assets/Felix_resume.pdf
 
 # Local-only administration files contain credentials and filesystem endpoints
 admin.js
